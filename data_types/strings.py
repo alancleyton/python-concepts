@@ -12,7 +12,8 @@ print('I am a single-quote string.')
 print("I am a double-quote string.")
 
 '''
-In Python strings, the backslash "\" is a special character, also called the "escape" character. It is used in representing certain whitespace characters.
+In Python strings, the backslash "\" is a special character, also called the "escape" character.
+It is used in representing certain whitespace characters.
 '''
 print("I am \"Groot\"")
 print('It\'s raining')
