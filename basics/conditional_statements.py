@@ -1,12 +1,3 @@
-# conditional statement based on logical expressions
-
-print('A' == 'A') # Equals -> True
-print('A' != 'a') # Not Equals -> True
-print(2 < 1)      # Less than -> False
-print(2 <= 1)     # Less than or equal to -> False
-print(2 > 1)      # Greater than -> True
-print(2 > 1)      # Greater than or equal to -> True
-
 # conditional statement using if statement
 if 2 > 1:
     print('2 is greater than 1')
