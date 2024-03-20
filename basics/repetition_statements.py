@@ -28,3 +28,19 @@ while index < 10:
   if index == 5:
     continue
   print(index) # print of the number 5 will be skibed by continue statement 
+
+'''
+A for loop is used for iterating over a sequence like a string, list, tuple, dictionary or object.
+For statement iterates each item in a sequence in order, executing the block each time. The loop continues until we reach the last item in the sequence.
+'''
+
+text = 'Python'
+for letter in text:
+  print(letter)
+
+fruits = ['Banana', 'Apple', 'Watermelon']
+for fruit in fruits:
+  print(fruit)
+
+for num in range(10):
+  print(num)
