@@ -48,3 +48,20 @@ user('Tim', 'Martin', 33)
 
 # when a parameter is defined with a default value, all the required parameters must come first inside the parentheses
 # def user(firstname, lastname, age=24, id): # SyntaxError: non-default argument follows default argument#
+
+'''
+Every function in Python has an implicit return value.
+If the function doesn't have any return statement, then it returns a None value.
+'''
+def hello():
+  print('Hello!')
+
+hello_function_value = hello()
+print(hello_function_value) # None
+
+# function with a return statement to specify a return value
+def sum(a, b):
+  return a + b
+
+sum_result_value = sum(10, 10)
+print(sum_result_value) # 20
