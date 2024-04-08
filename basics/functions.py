@@ -47,7 +47,7 @@ user('john', 'Doe')
 user('Tim', 'Martin', 33)
 
 # when a parameter is defined with a default value, all the required parameters must come first inside the parentheses
-# def user(firstname, lastname, age=24, id): # SyntaxError: non-default argument follows default argument#
+# def user(firstname, lastname, age=24, id): # SyntaxError: non-default argument follows default argument
 
 '''
 Every function in Python has an implicit return value.
@@ -65,3 +65,15 @@ def sum(a, b):
 
 sum_result_value = sum(10, 10)
 print(sum_result_value) # 20
+
+# function with an unknown number of arguments using (*), most commonly used as *args by convention
+def sum_numbers(*numbers):
+  result = 0
+  for number in numbers:
+    result += number
+  return result
+
+print(sum_numbers(5, 5, 100, 20))
+
+numbers = 15, 56, 10, 99
+print(sum_numbers(*numbers))
