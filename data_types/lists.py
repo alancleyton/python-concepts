@@ -6,7 +6,7 @@ In Python, lists are used to store multiple data type in a single variable
 fruits = ['apple', 'banana', 'cherry', 'orange']
 print(fruits)
 
-# also can be created using the list() method to create a empty list
+# also can be created using the list() to create a empty list
 empty_list = list()
 print(empty_list) # []
 
