@@ -77,3 +77,12 @@ print(sum_numbers(5, 5, 100, 20))
 
 numbers = 15, 56, 10, 99
 print(sum_numbers(*numbers))
+
+# assigning function to a variable 
+
+def multiply(a, b):
+  return a * b
+
+multi = multiply
+
+print(multi(2, 10))
