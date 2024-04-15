@@ -38,3 +38,37 @@ print(car['price'])
 # delete keys and values from dictionary
 del car['price']
 print(car)
+
+# dictionary keys lenght
+print(len(car))
+
+# list of items(key-value) in a dictionary with items()
+print(list(car.items()))
+
+# list of keys in a dictionary with keys()
+print(list(car.keys()))
+
+# list of values in a dictionary with values()
+print(list(car.values()))
+
+# set the key to the default value if key does not exist on dictionary
+car.setdefault('discount', 50)
+print(car)
+
+# copying a dictionary using copy() method
+other_car = car.copy()
+print(other_car)
+
+# removing an element from the dictionary with the specified key using pop()
+car.pop('discount')
+print(car)
+
+# removing the last element from the dictionary using popitem()
+car.popitem()
+print(car)
+
+# updating the he dictionary using update()
+car.update({ 'year': 1975, 'electric': False })
+car.update(brand='Honda')
+print(car)
+
