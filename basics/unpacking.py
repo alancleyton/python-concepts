@@ -10,3 +10,25 @@ print(name_1, name_2, other_names)
 # unpacking specific elements from list and ignoring other elements using the underscore (_) convention.
 python, _, ruby, _ = ['Pthon', 'JavaScript', 'Ruby', 'Java']
 print(python, ruby)
+
+# unpacking a dictionary
+user = {
+  'name': 'John Doe',
+  'email': 'john@example.com',
+  'age': 27,
+}
+name, email, age = user.values()
+print(name, email, age)
+
+# unpacking the leftover elements from dictionary
+name, *rest = user.values()
+print(name, rest)
+
+# unpacking specific elements from dictionary
+_, _, age = user.values()
+print(age)
+
+# unpacking the first and last elements from dictionary
+name, *_ = user.values()
+*_, age = user.values()
+print(name, age)
