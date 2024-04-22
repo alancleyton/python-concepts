@@ -86,3 +86,24 @@ def multiply(a, b):
 multi = multiply
 
 print(multi(2, 10))
+
+# function with an unknown number of keyword arguments using (**), most commonly used as *kwargs by convention
+def concatenate(**kwargs):
+  result = ""
+  for arg in kwargs.values():
+      result += arg
+  return result
+
+print(concatenate(a='Hello', b='World', c='!'))
+
+# function with an unknown number of arguments and keyword arguments
+def my_function(*args, **kwargs):
+  # arguments will return a tuple with values
+  for arg in args:
+    print(arg)
+
+  # keyword arguments will return a dictionary with key-value pairs
+  for key, value in kwargs.items():
+    print(key, value)
+
+my_function(27, 'John', True, email='xyz@example.com', password='123456', id=20)

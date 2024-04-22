@@ -32,3 +32,8 @@ print(age)
 name, *_ = user.values()
 *_, age = user.values()
 print(name, age)
+
+dict_1 = { 'name': 'John', 'age': 27 }
+dict_2 = { 'email': 'john@example.com', id: 256 }
+dict_3 = { **dict_1, **dict_2 }
+print(dict_3)
